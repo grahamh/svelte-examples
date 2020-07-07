@@ -1,17 +1,15 @@
 <script>
-    export let name;
-    import Page1 from './Page1.svelte';
-    import Page2 from './Page2.svelte';
-    let example = Page1;
+    import Hello from './Hello.svelte';
+    import Groceries from './Groceries.svelte';
+    let example = Hello;
 </script>
 
 <main>
-	<h1>Hello {name}!</h1>
-    <p>Visit the <a href="https://svelte.dev/tutorial">Svelte tutorial</a> to learn how to build Svelte apps.</p>
+	<h1>Elm Examples written in Svelte</h1>
     <div class="box">
         <div class="col1">
-            <div class="link" on:click='{() => example=Page1}'>Page 1</div>
-            <div class="link" on:click='{() => example=Page2}'>Page 2</div>
+            <div class="link" on:click='{() => example=Hello}'>Hello</div>
+            <div class="link" on:click='{() => example=Groceries}'>Groceries</div>
         </div>
         <div class="col2">
             <svelte:component this={example}/>
