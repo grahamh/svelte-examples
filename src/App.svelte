@@ -1,6 +1,7 @@
 <script>
     import Hello from './Hello.svelte';
     import Groceries from './Groceries.svelte';
+    import Shapes from './Shapes.svelte';
     let example = Hello;
 </script>
 
@@ -10,6 +11,7 @@
         <div class="col1">
             <div class="link" on:click='{() => example=Hello}'>Hello</div>
             <div class="link" on:click='{() => example=Groceries}'>Groceries</div>
+            <div class="link" on:click='{() => example=Shapes}'>Shapes</div>
         </div>
         <div class="col2">
             <svelte:component this={example}/>
