@@ -4,6 +4,8 @@
     import Shapes from './Shapes.svelte';
     import Buttons from './Buttons.svelte';
     import Text_fields from './Text-fields.svelte';
+    import Forms from './Forms.svelte';
+    import Numbers from './Numbers.svelte';
     let example = Hello;
 </script>
 
@@ -16,6 +18,9 @@
             <div class="link" on:click='{() => example=Shapes}'>Shapes</div>
             <div class="link" on:click='{() => example=Buttons}'>Buttons</div>
             <div class="link" on:click='{() => example=Text_fields}'>Text-fields</div>
+            <div class="link" on:click='{() => example=Forms}'>Forms</div>
+            <div class="link" on:click='{() => example=Numbers}'>Numbers</div>
+            
         </div>
         <div class="col2">
             <svelte:component this={example}/>
