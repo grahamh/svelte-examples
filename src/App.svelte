@@ -6,6 +6,7 @@
     import Text_fields from './Text-fields.svelte';
     import Forms from './Forms.svelte';
     import Numbers from './Numbers.svelte';
+    import Cards from './Cards.svelte';
     let example = Hello;
 </script>
 
@@ -20,7 +21,7 @@
             <div class="link" on:click='{() => example=Text_fields}'>Text-fields</div>
             <div class="link" on:click='{() => example=Forms}'>Forms</div>
             <div class="link" on:click='{() => example=Numbers}'>Numbers</div>
-            
+            <div class="link" on:click='{() => example=Cards}'>Cards</div>
         </div>
         <div class="col2">
             <svelte:component this={example}/>
